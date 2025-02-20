@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text color */
+    font-family: 'Courier New', Courier, monospace; /* Retro monospace font */
+    background-color: #000; /* Black background for a retro feel */
+    color: #00ff00; /* Bright green text color */
     margin: 0;
     padding: 20px;
     text-align: center; /* Center the content */
@@ -9,18 +9,19 @@ body {
 
 pre {
     font-size: 16px; /* Adjust font size for better visibility */
-    color: #ffffff; /* Light text color for ASCII art */
+    color: #00ff00; /* Bright green text color for ASCII art */
 }
 
 a {
-    color: #bb86fc; /* Light purple color for links */
+    color: #d0d4d6; /* Bright yellow color for links */
+    text-decoration: underline; /* Underline links for a retro look */
 }
-p  {
+p {
     font-size: 16px;
-    color:aliceblue
+    color: #ffffff
 }
 a:hover {
-    color: #3700b3; /* Darker purple on hover */
+    color: #ff6600; /* Orange color on hover */
 }
 
 .category {
@@ -28,28 +29,30 @@ a:hover {
 }
 
 .collapsible {
-    background-color: #121212;
-    color: white;
+    background-color: #333; /* Dark gray background for buttons */
+    color: #2fcf21; /* GR?EEN */
     cursor: pointer;
     padding: 10px;
     width: 100%;
-    border: none;
+    border: 2px solid #8a120e; /* RED */
     text-align: left;
     outline: none;
     font-size: 16px;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace; /* Retro font for buttons */
 }
 
 .collapsible:hover {
-    background-color: #3700b3;
+    background-color: #444; /* Slightly lighter gray on hover */
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #121212;
+    background-color: #222; /* Darker gray for content background */
+    border: 2px solid #8a120e; /* RED */
     border-radius: 5px;
     margin-top: 5px;
-    color: #000; /* Dark text for content */
+    color: #8a120e; /* RED */
 }
