@@ -4,31 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local IT Guy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* Light text color */
-            margin: 0;
-            padding: 20px;
-            text-align: center; /* Center the content */
-        }
-       
-		pre {
-            font-size: 16px; /* Adjust font size for better visibility */
-            color: #ffffff; /* Light text color for ASCII art */
-        }
-        a {
-            color: #bb86fc; /* Light purple color for links */
-        }
-        a:hover {
-            color: #3700b3; /* Darker purple on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <pre>
-     
 M""MMMMMMMM                            dP    M""M M""""""""M    MM'"""""`MM                   
 M  MMMMMMMM                            88    M  M Mmmm  mmmM    M' .mmm. `M                   
 M  MMMMMMMM .d8888b. .d8888b. .d8888b. 88    M  M MMMM  MMMM    M  MMMMMMMM dP    dP dP    dP 
@@ -37,9 +16,49 @@ M  MMMMMMMM 88.  .88 88.  ... 88.  .88 88    M  M MMMM  MMMM    M. `MMM' .M 88. 
 M         M `88888P' `88888P' `88888P8 dP    M  M MMMM  MMMM    MM.     .MM `88888P' `8888P88 
 MMMMMMMMMMM                                  MMMM MMMMMMMMMM    MMMMMMMMMMM               .88 
                                                                                       d8888P  
-<h2><a href="https://x.com/DOASSUDO">X</a></h2>
-<h2><a href="https://repl.it/@wire">Replit</a></h2>
-<h2><a href="https://github.com/befoul">Github</a></h2>
     </pre>
-    </body>
+    
+    <div class="category">
+        <button class="collapsible">Socials</button>
+        <div class="content">
+            <h2><a href="https://x.com/DOASSUDO">X</a></h2>
+            <h2><a href="https://repl.it/@wire">Replit</a></h2>
+            <h2><a href="https://github.com/befoul">Github</a></h2>
+        </div>
+    </div>
+
+    <div class="category">
+        <button class="collapsible">Services</button>
+        <div class="content">
+            <p>Break Fix</p>
+            <p>Risk Advisory</p>
+            <p>Remote Consultations</p>
+            <p>Remote Penetration Testing</p>
+            <p>Advanced LAMP Implementations</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <button class="collapsible">Specializations</button>
+        <div class="content">
+            <p>Network Engineering</p>
+            <p>Network Security auditing</p>
+            <p>Operating System Security</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
 </html>
