@@ -17,9 +17,15 @@ a {
     color: #d0d4d6; /* Bright yellow color for links */
     text-decoration: underline; /* Underline links for a retro look */
 }
+h2 {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+}
 p {
     font-size: 16px;
-    color: #ffffff
+    color: #ffffff;
+    text-align: left;
 }
 a:hover {
     color: #ff6600; /* Orange color on hover */
@@ -34,7 +40,7 @@ a:hover {
     color: #2fcf21; /* GR?EEN */
     cursor: pointer;
     padding: 10px;
-    width: 100%;
+    width: 50%;
     border: 2px solid #8a120e; /* RED */
     text-align: left;
     outline: none;
@@ -48,14 +54,25 @@ a:hover {
 }
 
 .content {
-    padding: 0 18px;
-    display: none;
+    padding: 1px;
+    display: none; /* This will hide the content by default */
     overflow: hidden;
     background-color: #222; /* Darker gray for content background */
     border: 2px solid #8a120e; /* RED */
     border-radius: 5px;
-    margin-top: 5px;
+    margin: 5px auto; /* Center horizontally and add top margin */
     color: #8a120e; /* RED */
+    width: 50%; /* Set width to 50% */
+    text-align: center; /* Center text inside the content */
+}
+
+footer {
+    height: 50px; /* Set footer height */
+    background-color: #000; /* Black background for footer */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the text */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 @media only screen and (max-width: 768px) {
