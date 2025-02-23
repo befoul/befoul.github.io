@@ -81,3 +81,14 @@ footer {
         display: none; /* Hides ASCII art on screens smaller than 768px */
     }
 }
+
+.desktop-heading {
+    display: block; /* Show by default */
+}
+
+/* Hide on mobile devices */
+@media (max-width: 768px) {
+    .desktop-heading {
+        display: none; /* Hide on screens smaller than 768px */
+    }
+}
