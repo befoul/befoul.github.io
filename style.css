@@ -1,34 +1,35 @@
 body {
     font-family: 'Courier New', Courier, monospace; /* Retro monospace font */
     background-color: #000; /* Black background for a retro feel */
-    color: #00ff00; /* Bright green text color */
+    color: #4B8B3B; /* Bright green text color */
     margin: 0;
     padding: 20px;
     text-align: center; /* Center the content */
+    
 }
 
 
 pre {
     font-size: 16px; /* Adjust font size for better visibility */
-    color: #00ff00; /* Bright green text color for ASCII art */
+    color: #4B8B3B; /* Bright green text color for ASCII art */
 }
 
 a {
-    color: #d0d4d6; /* Bright yellow color for links */
+    color: #A0B2C1; /* Bright yellow color for links */
     text-decoration: underline; /* Underline links for a retro look */
 }
 h2 {
     font-size: 18px;
-    color: #ffffff;
+    color: #A9A9A9;
     text-align: left;
 }
 p {
     font-size: 16px;
-    color: #ffffff;
+    color: #A9A9A9;
     text-align: left;
 }
 a:hover {
-    color: #ff6600; /* Orange color on hover */
+    color: #4A5568; /* Orange color on hover */
 }
 
 .category {
@@ -41,7 +42,7 @@ a:hover {
     cursor: pointer;
     padding: 10px;
     width: 50%;
-    border: 2px solid #8a120e; /* RED */
+    border: 2px solid #2F4F4F; /* RED */
     text-align: left;
     outline: none;
     font-size: 16px;
@@ -58,7 +59,7 @@ a:hover {
     display: none; /* This will hide the content by default */
     overflow: hidden;
     background-color: #222; /* Darker gray for content background */
-    border: 2px solid #8a120e; /* RED */
+    border: 2px solid #228B22; /* RED */
     border-radius: 5px;
     margin: 5px auto; /* Center horizontally and add top margin */
     color: #8a120e; /* RED */
