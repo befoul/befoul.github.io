@@ -1,97 +1,112 @@
 body {
-    font-family: 'Courier New', Courier, monospace; /* Retro monospace font */
-    background-color: #000; /* Black background for a retro feel */
-    color: #4B8B3B; /* Bright green text color */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #4B8B3B;
     margin: 0;
     padding: 20px;
-    text-align: center; /* Center the content */
-    
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 pre {
-    font-size: 16px; /* Adjust font size for better visibility */
-    color: #4B8B3B; /* Bright green text color for ASCII art */
+    font-size: 16px;
+    color: #4B8B3B;
+    text-align: center;
 }
 
 a {
-    color: #A0B2C1; /* Bright yellow color for links */
-    text-decoration: underline; /* Underline links for a retro look */
+    color: #A0B2C1;
+    text-decoration: underline;
 }
+
 h2 {
     font-size: 18px;
     color: #A9A9A9;
     text-align: left;
+    margin-left: 1em;
 }
+
 h3 {
     text-align: center;
 }
+
 p {
     font-size: 16px;
     color: #A9A9A9;
     text-align: left;
+    margin-left: 1em;
 }
+
 a:hover {
-    color: #4A5568; /* Orange color on hover */
+    color: #4A5568;
 }
 
 .category {
     margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.collapsible {
-    background-color: #333; /* Dark gray background for buttons */
-    color: #2fcf21; /* GR?EEN */
-    cursor: pointer;
-    padding: 10px;
+.category:hover {
+    color: #A9A9A9;
+}
+details {
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    background: #222;
+    color: #eee;
     width: 50%;
-    border: 2px solid #2F4F4F; /* RED */
+    max-width: 500px;
+    min-width: 250px;
     text-align: left;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
     outline: none;
+    color: #2fcf21;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace; /* Retro font for buttons */
+    text-align: left;
 }
 
-.collapsible:hover {
-    background-color: #444; /* Slightly lighter gray on hover */
-}
-
-.content {
-    padding: 1px;
-    display: none; /* This will hide the content by default */
-    overflow: hidden;
-    background-color: #222; /* Darker gray for content background */
-    border: 2px solid #228B22; /* RED */
-    border-radius: 5px;
-    margin: 5px auto; /* Center horizontally and add top margin */
-    color: #8a120e; /* RED */
-    width: 50%; /* Set width to 50% */
-    text-align: center; /* Center text inside the content */
+details[open] summary {
+    color: #6cf;
 }
 
 footer {
-    height: 50px; /* Set footer height */
-    background-color: #000; /* Black background for footer */
-    text-align: center; /* Center the text */
-    padding: 10px; /* Padding around the text */
-    width: 100%; /* Full width */
-    margin-top: auto; /* Push footer to the bottom */
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 768px) {
     pre {
-        display: none; /* Hides ASCII art on screens smaller than 768px */
+        display: none;
+    }
+    details {
+        width: 90%;
+        min-width: unset;
     }
 }
 
 .desktop-heading {
-    display: block; /* Show by default */
+    display: block;
 }
 
-/* Hide on mobile devices */
 @media (max-width: 768px) {
     .desktop-heading {
-        display: none; /* Hide on screens smaller than 768px */
+        display: none;
     }
 }

@@ -12,6 +12,28 @@
     <meta property="og:url" content="https://befoul.github.io">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://befoul.github.io/image/penguin.gif">
+    <style>
+        /* Optional: Style for details/summary */
+        details {
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5em;
+            background: #222;
+            color: #eee;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+        details[open] summary {
+            color: #6cf;
+        }
+        .category h2, .category p {
+            margin-left: 1em;
+        }
+    </style>
 </head>
 <body>
     <pre>
@@ -24,64 +46,47 @@ M         M `88888P' `88888P' `88888P8 dP    M  M MMMM  MMMM    MM.     .MM `888
 MMMMMMMMMMM                                  MMMM MMMMMMMMMM    MMMMMMMMMMM               .88 
                                                                                       d8888P  
     </pre>
-  <nav>
-    <a href="blog">Blog</a>
-  </nav>
-
+    <nav>
+        <a href="blog">Blog</a>
+    </nav>
 
     <div class="category">
-        <button class="collapsible">Socials</button>
-        <div class="content">
+        <details>
+            <summary>Socials</summary>
             <h2><a href="https://x.com/DOASSUDO">X</a></h2>
             <h2><a href="https://repl.it/@wire">Replit</a></h2>
             <h2><a href="https://github.com/befoul">Github</a></h2>
-        </div>
+        </details>
     </div>
 
     <div class="category">
-        <button class="collapsible">Services</button>
-        <div class="content">
+        <details>
+            <summary>Services</summary>
             <p>Break Fix</p>
             <p>Risk Advisory</p>
             <p>Remote Consultations</p>
             <p>Remote Penetration Testing</p>
             <p>Advanced LAMP Implementations</p>
-        </div>
+        </details>
     </div>
 
     <div class="category">
-        <button class="collapsible">Specializations</button>
-        <div class="content">
+        <details>
+            <summary>Specializations</summary>
             <p>Network Engineering</p>
             <p>Network Security auditing</p>
             <p>Operating System Security</p>
-        </div>
+        </details>
     </div>
-    <div>
-    </div>
-    <h3>XMPP: localitguy@projectsegfau.lt</h3>
+
+    <h3>Email: localitguy@tilde.horse</h3>
     <h3 class="desktop-heading">XMR: 4B5iG3WsXPW8BNAdhHxgqDRCxMtwzmsTtKGLcREQ9vWmYX61JKHu3PJ7si7UVDPiYMcidjMdVZEzDaVLkvrVeBgVLy3NN9z</h3>
-        <footer>
+    <footer>
         <h3>
             <a href="https://x.com/DOASSUDO" target=":3">
-        <img src="image/penguins.gif" alt="88x31" />
-        </a>
-            </h3>
+                <img src="image/penguins.gif" alt="88x31" />
+            </a>
+        </h3>
     </footer>
-
-    <script>
-        document.querySelectorAll('.collapsible').forEach(button => {
-            button.addEventListener('click', () => {
-                button.classList.toggle('active');
-                const content = button.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        });
-        
-    </script>
 </body>
 </html>
